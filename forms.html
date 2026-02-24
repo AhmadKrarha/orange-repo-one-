@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+    <h2>User Registration Form </h2>
+    <form action="/submit-profile" method="post">
+        <label for="Name">Name:</label><br>
+        <input type="text" id="Name" name="full_name" placeholder="your name goes here"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="user_email" placeholder="example@mail.com"><br><br>
+
+        <label for="Password">Password:</label><br>
+        <input type="password" id="Password" name="user_password"><br><br>
+
+        <label for="Date">Date of Birth:</label><br>
+        <input type="date" id="Date" name="birth_date"><br><br>
+
+        <label for="profile-pic">Profile Picture:</label><br>
+        <input type="file" id="profile-pic" name="profile_pic" accept="image/*"><br><br>
+
+        <button type="submit">Create Account</button>
+    </form>
+    <h2>User preferece form</h2>
+
+
+    <form method="post" target="_blank" autocomplete="off">
+        <label for="AboutMe"> About Me:</label><br>
+        <textarea id="AboutMe" rows="4" cols="40"></textarea><br>
+
+        <label for="dropdownlist">Choose Country:</label>
+        <select id="dropdownlist">
+            <option value="jo">Jordan</option>
+            <option value="ca">Canada</option>
+            <option value="aus"> Austriala</option>
+            <option value="arg"> Argentina</option>
+        </select><br><br>
+
+        <fieldset id="preferece">
+            <legend>Contact Preference</legend>
+            <input type="radio" id="contact-email" name="contact" value="email">
+            <label for="contact-email">Email</label>
+
+            <input type="radio" id="contact-phone" name="contact" value="phone">
+            <label for="contact-phone">Phone</label>
+        </fieldset>
+
+
+    </form>
+    <form method="post" action="https://example.com/submit" target="_blank" autocomplete="off">
+        <label for="emailTest"> Email</label><br>
+        <input type="email" required id="emailTest"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>Survey Form</h2>
+    <form method="post" target="_blank" autocomplete="off">
+        <label for="username"> User Name </label><br>
+        <input type="text" maxlength="10" id="username" required placeholder="enter your user name here "><br><br>
+        <label for="user-age">Age (18-60):</label>
+        <input type="number" id="user-age" min="18" max="60" placeholder="Enter your age"><br><br>
+
+        <label for="faviorate Language">Favorite Language:</label>
+        <input type="text" list="langs" id="faviorate Language">
+        <datalist id="langs">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaScript">
+        </datalist>
+    </form>
+</body>
+
+</html>
