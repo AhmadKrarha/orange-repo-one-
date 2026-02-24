@@ -1,0 +1,173 @@
+<!DOCTYPE html> <!--used to define that we are using html 5-->
+<html lang="en"> <!--the root element for all tags -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html research assignment</title>
+    <link rel="icon" type="image/jpg" href="images\boat.jpg" sizes="32x32">
+</head>
+
+<body>
+    <main>
+        <!--  Mark the beging of the body of the web page -->
+        <header>
+            <h1> Html research</h1>
+            <hr>
+            <nav>
+                <a href="#">Home </a>
+                <a href="#">About </a>
+                <a href="#">Contact us </a>
+
+            </nav>
+            <!-- here i tried to literaly add random elements to do the assignment to -->
+            <hr>
+        </header>
+        <a href="about.html">here you can go to About Me page </a><br><br>
+        <img src="images\boat.jpg" id="Picture" alt="Picture for a boat" width="600px" height="400px">
+        <hr>
+        <h5>here goes H5 which is smaller than H1 in size and importance</h5>
+        <br>
+        <p> <b>this is a bold text </b> <strong>and this is strong i look like bold </strong> <i>and i am italic font
+            </i> <em> and lastly i am emphsized text </em></p>
+        <div style="background-color: aqua;">here goes the block level element notice the backgroucd clolr it spans to
+            the max size of the page </div>
+        <span style="background-color: aquamarine;"> and i am a span i only take the necssary space and i dont take the
+            full width of the screen</span>
+        <!--here goes the comment i am really important in order to document the code -->
+        <p>
+            This is <b>bold</b> but not important, while <strong>strong</strong> shows real importance.
+            Sometimes we use <i>italics</i> for style, but <em>emphasis</em> changes meaning.
+            You can <mark>highlight</mark> key words, add <small>fine print</small>,
+            show edits like <del>removed text</del> and <ins>new text</ins>.
+            Formulas use H<sub>2</sub>O, and math uses x<sup>2</sup>.
+        </p>
+        <pre>
+This text keeps its spacing:
+    Line 1
+        Line 2 (indented)
+Line 3 stays aligned
+</pre>
+        <hr> <!-- here goes the multimedia part where we tried to add video and audio and to export outside video from youtube from outside our page -->
+        <audio controls autoplay muted loop>
+            <source src="aSounds\sound.mp3" type="audio/mp3">
+        </audio>
+        <hr>
+        <video width="400" height="250" controls autoplay muted loop>
+            <source src="aVideo\video.mp4" type="video/mp4">
+        </video>
+        <hr>
+        <iframe width="560" height="315" src="https://youtu.be/kyxB0VPXtNw?si=iQXhcxlnGC8xysOG">
+        </iframe>
+        <hr>
+
+        <!DOCTYPE html>
+        <html>
+
+        <head>
+            <title>Demo Form</title>
+        </head>
+
+        <body>
+            <h2>Registration Form</h2> <!-- and here goes the form part where we tried to grap info from the user -->
+
+            <form action="#" method="post" target="_blank" autocomplete="off">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" maxlength="12" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="example@mail.com" required><br><br>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" min="18" max="100"><br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob"><br><br>
+
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female<br><br>
+
+                <input type="checkbox" name="interest" value="sports"> Sports
+                <input type="checkbox" name="interest" value="music"> Music<br><br>
+
+                <input type="file" multiple><br><br>
+
+                <label for="fav">Favorite Food:</label>
+                <select id="fav">
+                    <optgroup label="Fruits">
+                        <option>Apple</option>
+                        <option>Banana</option>
+                    </optgroup>
+                    <optgroup label="Vegetables">
+                        <option>Carrot</option>
+                        <option>Broccoli</option>
+                    </optgroup>
+                </select><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" rows="4" cols="40" placeholder="Write something..."></textarea><br><br>
+
+                <label for="browser">Choose a browser:</label>
+                <input list="browsers" id="browser">
+                <datalist id="browsers">
+                    <option value="Chrome">
+                    <option value="Firefox">
+                    <option value="Edge">
+                </datalist><br><br>
+
+                <fieldset>
+                    <legend>Login Info</legend>
+                    Username: <input type="text" value="DefaultUser" readonly><br>
+                    Password: <input type="password" disabled value="Disabled"><br>
+                </fieldset><br>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </body>
+                                                <!--here where i tried to add some semantic tags to practise-->
+        <section>
+            <h2>Technology News</h2> 
+            <article>
+                <h3>New Smartphone Released</h3>
+                <p>The latest smartphone model has been launched with improved battery life and camera features.</p>
+            </article>
+            <article>
+                <h3>AI in Education</h3>
+                <p>Schools are adopting AI tools to help students learn more effectively and personalize their study
+                    plans.</p>
+            </article>
+        </section> 
+        <aside>
+            <h4>Related Links</h4>
+            <ul>
+                <li><a href="#">Top Gadgets of 2026</a></li>
+                <li><a href="#">AI Trends</a></li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <footer>                                         <!--and here goes the footer of my web page -->
+        <p>&copy; 2026 MyWebsite. All rights reserved.</p>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <p>Follow us:
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
