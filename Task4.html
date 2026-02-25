@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+</head>
+<body>
+    <main>
+        <h2>Fill in your information</h2>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Form</legend>
+
+                <label for="first-name">First name:</label><br>
+                <input type="text" id="first-name" name="first_name"><br><br>
+
+                <label for="last-name">Last name:</label><br>
+                <input type="text" id="last-name" name="last_name"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <h3>Your Gender</h3>
+                <label><input type="radio" name="gender" value="male"> Male</label><br>
+                <label><input type="radio" name="gender" value="female"> Female</label><br><br>
+
+                <h3>Favorite Subjects</h3>
+                <label><input type="checkbox" name="subject" value="C++"> C++</label><br>
+                <label><input type="checkbox" name="subject" value="Java"> Java</label><br>
+                <label><input type="checkbox" name="subject" value="C#"> C#</label><br>
+                <label><input type="checkbox" name="subject" value="PHP"> PHP</label><br>
+                <label><input type="checkbox" name="subject" value="SQL"> SQL</label><br><br>
+
+                <h3>Your City</h3>
+                <label for="city">City: </label><br>
+                <select id="city" name="city">
+                    <option value="Irbid">Irbid</option>
+                    <option value="Amman">Amman</option>
+                    <option value="Zarqa">Zarqa</option>
+                </select><br><br>
+
+                <label for="file-upload">Upload Image: </label><br>
+                <input type="file" id="file-upload" name="user_image"><br><br>
+
+                <h3>Write About yourself:</h3>
+                <textarea id="about" name="about" placeholder="Write Here"></textarea><br><br>
+
+                <button type="submit">Submit</button>
+
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
